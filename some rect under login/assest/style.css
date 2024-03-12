@@ -1,0 +1,198 @@
+:root {
+    --form-width: 400px;
+    --form-height: 500px;
+    --form-back-color: #d3d3d339;
+    --form-position: relative;
+    --form-filter: 8px;
+    --form-borderRaduis: 15px;
+    /* lets beginning the drops */
+    --drop-width: 150px;
+    --drop-height: 150px;
+    --drop-back-color: var(--form-back-color);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom left, #972eff, #bf40bf, #da70d6);
+    width: 100%;
+    height: 100vh;
+}
+
+section .section-container {
+    display: flex;
+    align-items: center;
+    margin-top: 7em;
+}
+
+section .section-container .drops {
+    position: absolute;
+}
+
+section .section-container .form-login form {
+    position: var(--form-position);
+    width: var(--form-width);
+    height: var(--form-height);
+    background: var(--form-back-color);
+    border-radius: var(--form-borderRaduis);
+    backdrop-filter: blur(var(--form-filter));
+    box-shadow: 1px 1px 100px #0000003a;
+    z-index: 1;
+}
+
+#drop_position_left {
+    width: var(--drop-width);
+    height: var(--drop-height);
+    background: var(--drop-back-color);
+    border-radius: 15px;
+    position: absolute;
+    transform: scale(0.6);
+    margin-top: -19em;
+    margin-left: -5em;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+#drop_position_near_password {
+    width: var(--drop-width);
+    height: var(--drop-height);
+    background: var(--form-back-color);
+    border-radius: var(--form-borderRaduis);
+    transform: scale(0.4);
+    position: absolute;
+    margin-top: -2em;
+    margin-left: 3em;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+#drop_position_right {
+    width: var(--drop-width);
+    height: var(--drop-height);
+    background: var(--form-back-color);
+    border-radius: var(--form-borderRaduis);
+    backdrop-filter: blur(var(--form-filter));
+    transform: scale(0.9);
+    position: absolute;
+    z-index: 1;
+    margin-top: -20em;
+    margin-left: 20em;
+    transition: 0.4s;
+}
+
+#drop_position_top_right {
+    width: var(--drop-width);
+    height: var(--drop-height);
+    background: var(--form-back-color);
+    border-radius: 15px;
+    transform: scale(0.7);
+    position: absolute;
+    margin-top: 0.3em;
+    margin-left: 20.5em;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+#demo {
+    width: var(--drop-width);
+    height: var(--drop-height);
+    background: var(--form-back-color);
+    border-radius: var(--form-borderRaduis);
+    backdrop-filter: blur(var(--form-filter));
+    transform: scale(0.6);
+    position: absolute;
+    z-index: 1;
+    margin-top: 11em;
+    margin-left: 18.9em;
+    transition: 0.4s;
+}
+
+section .section-container .form-login form .welcome h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: sans-serif;
+    padding: 1.5em;
+}
+
+section .section-container .form-login form .username {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+section .section-container .form-login form .username label {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 18px;
+}
+
+section .section-container .form-login form .username input {
+    width: 300px;
+    height: 40px;
+    background: #0000003a;
+    border: none;
+    border-radius: 30px;
+    margin-left: 4em;
+    font-family:sans-serif;
+}
+
+section .section-container .form-login form .password {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+section .section-container .form-login form .password label {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 18px;
+}
+
+section .section-container .form-login form .input-icon {
+    display: flex;
+}
+
+section .section-container .form-login form .input-icon input {
+    width: 300px;
+    height: 40px;
+    background: #0000003a;
+    border-radius: 30px;
+    margin-left: 4em;
+    border: none;
+    font-family: sans-serif;
+}
+
+section .section-container .form-login form .input-icon .eye {
+    position: absolute;
+    color: #fff;
+    margin-top: 0.7em;
+    transform: translateX(310px);
+    cursor: pointer;
+}
+
+section .section-container .form-login form .input-icon .eye-diplay {
+    display: none;
+}
+
+section .section-container .form-login form .submit_button_adlia button {
+    margin: 4em 9em;
+    width: 150px;
+    height: 35px;
+    background: #0000003a;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+}

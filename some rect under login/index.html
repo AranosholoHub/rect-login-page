@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>drops login form</title>
+</head>
+
+<body>
+    <section>
+        <div class="section-container">
+
+            <div class="form-login">
+                <form action="" method="post" name="form" id="myform" >
+                    <div class="welcome">
+                        <h3>welcome</h3>
+                    </div>
+                    <div class="username">
+                        <label for="username">Username</label>
+                        <input type="text" id="username_input" name="username">
+                    </div>
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <div class="input-icon"> 
+                            <input type="password" id="password" name="password">
+                            <div class="eye eye-display" id="eye"><i class="fa fa-eye"></i></div>
+                            <div class="eye" id="eye_close"><i class="fa fa-eye-slash"></i></div>
+                        </div>
+                    </div>
+                    <div class="submit_button_adlia">
+                        <button type="submit" id="button_submit_adlia">Login</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="drops">
+                <div id="drop_position_left"></div>
+                <div id="drop_position_right"></div>
+                <div id="drop_position_near_password"></div>
+                <div id="drop_position_top_right"></div>
+                <div id="demo"></div>
+            </div>
+        </div>
+    </section>
+    <script src="assest/app.js"></script>
+</body>
+
+</html>
